@@ -1,33 +1,34 @@
 openapi: 3.0.4
 info:
   title: Trivia Generator
-  description: Trivia is a simple tool for getting trivia questions. It returns a random trivia question based on your selected category.
+  description: >-
+    Trivia is a simple tool for getting trivia questions. It returns a random
+    trivia question based on your selected category.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/trivia:
     get:
       summary: Get Random Trivia Question
-      description: Trivia is a simple tool for getting trivia questions. It returns a random trivia question based on your selected category.
+      description: Get a random trivia question
       operationId: trivia
       parameters:
-      - name: category
-        default: general
-        in: query
-        schema:
-          type: string
-        required: false
-        description: The category of the trivia question (e.g., general, entertainment, history, etc)
-        example: general
+        - name: category
+          in: query
+          schema:
+            type: string
+          required: false
+          description: The category of the trivia question
+          example: general
       responses:
         '200':
           description: Successful Response
@@ -43,26 +44,26 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
-                  question: What kind of person is described by the expression green around the gills?
-                  answer: Physically ill
+                  question: >-
+                    Is the Pink Cadillac the trademark of Mary Kay beauty
+                    products?
+                  answer: 'Yes'
                   options:
-                  - A Physically ill
-                  - B New at fishing
-                  - C Gardner novice
-                  - D Jealous over someone
+                    - A Yes
+                    - B No
                   category: general
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -70,4 +71,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
