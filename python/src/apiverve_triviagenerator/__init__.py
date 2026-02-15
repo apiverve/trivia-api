@@ -1,1 +1,3 @@
-from .apiClient import TriviaAPIClient
+from .apiClient import TriviaAPIClient, TriviaAPIClientError
+
+__all__ = ['TriviaAPIClient', 'TriviaAPIClientError']
