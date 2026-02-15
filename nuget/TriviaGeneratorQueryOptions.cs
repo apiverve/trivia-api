@@ -11,8 +11,7 @@ namespace APIVerve.API.TriviaGenerator
     public class TriviaGeneratorQueryOptions
     {
         /// <summary>
-        /// The category of the trivia question (e.g., general, entertainment, history, etc)
-        /// Example: general
+        /// The category of the trivia question
         /// </summary>
         [JsonProperty("category")]
         public string Category { get; set; }
