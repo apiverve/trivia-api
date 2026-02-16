@@ -224,8 +224,9 @@ from apiverve_triviagenerator.apiClient import TriviaAPIClient
 
 api = TriviaAPIClient("[YOUR_API_KEY]")
 
+query = { "category": "general" }
+
 try:
-    query = { "category": "general" }
     result = api.execute(query)
     print(result)
 finally:
