@@ -122,13 +122,11 @@ async function makeRequest() {
   "status": "ok",
   "error": null,
   "data": {
-    "question": "What kind of person is described by the expression green around the gills?",
-    "answer": "Physically ill",
+    "question": "Is the Pink Cadillac the trademark of Mary Kay beauty products?",
+    "answer": "Yes",
     "options": [
-      "A Physically ill",
-      "B New at fishing",
-      "C Gardner novice",
-      "D Jealous over someone"
+      "A Yes",
+      "B No"
     ],
     "category": "general"
   }
