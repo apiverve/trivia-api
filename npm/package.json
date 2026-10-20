@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/trivia",
-  "version": "1.2.0",
-  "description": "Trivia is a simple tool for getting trivia questions. It returns a random trivia question based on your selected category.",
+  "version": "1.2.2",
+  "description": "Trivia Generator is a trivia and quiz API that serves random trivia questions complete with multiple-choice options and the correct answer. Paid plans can filter questions across topics like history, science, geography, and pop culture.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "trivia", "trivia generator", "trivia api", "trivia tool", "trivia software"
+    "trivia api", "trivia questions api", "quiz api", "free trivia api", "free quiz api"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/trivia-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/trivia?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/trivia?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
