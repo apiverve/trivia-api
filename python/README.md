@@ -1,13 +1,12 @@
 Trivia Generator API
 ============
 
-Trivia is a simple tool for getting trivia questions. It returns a random trivia question based on your selected category.
+Trivia Generator is a trivia and quiz API that serves random trivia questions complete with multiple-choice options and the correct answer. Paid plans can filter questions across topics like history, science, geography, and pop culture.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [Trivia Generator API](https://apiverve.com/marketplace/trivia?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-triviagenerator.svg)](https://pypi.org/project/apiverve-triviagenerator/)
+
+This is a Python wrapper for the [Trivia Generator API](https://apiverve.com/marketplace/trivia?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-triviagenerator
 
 ## Configuration
 
-Before using the trivia API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the Trivia Generator API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -60,7 +59,7 @@ except Exception as e:
 
 ## Usage
 
-The Trivia Generator API documentation is found here: [https://docs.apiverve.com/ref/trivia](https://docs.apiverve.com/ref/trivia?utm_source=pypi&utm_medium=readme).
+The Trivia Generator API documentation is found here: [https://docs.apiverve.com/ref/trivia](https://docs.apiverve.com/ref/trivia?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -102,13 +101,11 @@ print(result)
   "status": "ok",
   "error": null,
   "data": {
-    "question": "What kind of person is described by the expression green around the gills?",
-    "answer": "Physically ill",
+    "question": "Is the Pink Cadillac the trademark of Mary Kay beauty products?",
+    "answer": "Yes",
     "options": [
-      "A Physically ill",
-      "B New at fishing",
-      "C Gardner novice",
-      "D Jealous over someone"
+      "A Yes",
+      "B No"
     ],
     "category": "general"
   }
@@ -238,7 +235,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -249,12 +246,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
