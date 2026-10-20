@@ -2,8 +2,10 @@ openapi: 3.0.4
 info:
   title: Trivia Generator
   description: >-
-    Trivia is a simple tool for getting trivia questions. It returns a random
-    trivia question based on your selected category.
+    Trivia Generator is a trivia and quiz API that serves random trivia
+    questions complete with multiple-choice options and the correct answer. Paid
+    plans can filter questions across topics like history, science, geography,
+    and pop culture.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +20,7 @@ servers:
 paths:
   /v1/trivia:
     get:
-      summary: Get Random Trivia Question
+      summary: Trivia Generator
       description: Get a random trivia question
       operationId: trivia
       parameters:
