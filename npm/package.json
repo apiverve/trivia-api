@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/trivia",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Trivia Generator is a trivia and quiz API that serves random trivia questions complete with multiple-choice options and the correct answer. Paid plans can filter questions across topics like history, science, geography, and pop culture.",
   "main": "index.js",
   "types": "index.d.ts",
